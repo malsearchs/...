@@ -1,4 +1,5 @@
-  BSides Vancouver: 2018 (Workshop)
+BSides Vancouver: 2018 (Workshop)
+
 Boot2Root challenge.
 
 VM image available here.
