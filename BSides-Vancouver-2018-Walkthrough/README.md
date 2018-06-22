@@ -8,5 +8,6 @@ Boot the image from VM Player or VirtualBox and keep the network settings in bri
 Enumeration:  
 
 First, find the IP address of the target.
+
 netdiscover –r 10.11.1.0/24
 
