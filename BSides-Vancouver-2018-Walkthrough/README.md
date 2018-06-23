@@ -4,8 +4,7 @@
 
 VM image available [here](https://www.vulnhub.com/entry/bsides-vancouver-2018-workshop,231/#download).
 
-
->![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `Boot the image from VM Player or VirtualBox and keep the network settings in bridge-mode for easier IP assignment and then get the attacker (typically, Kali) ready.  I would strongly recommend to keep this network out of Internet reach.`
+<span style=“color:gray;”> Boot the image from VM Player or VirtualBox and keep the network settings in bridge-mode for easier IP assignment and then get the attacker (typically, Kali) ready.  I would strongly recommend to keep this network out of Internet reach.</span>
 
 ## Enumeration
 First, find the IP address of the victim.
