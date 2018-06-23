@@ -7,7 +7,7 @@ VM image available [here](https://www.vulnhub.com/entry/bsides-vancouver-2018-wo
 Boot the image from VM Player or VirtualBox and keep the network settings in bridge-mode for easier IP assignment and then get the attacker (typically, Kali) ready.  Would strongly recommend to keep this network out of Internet reach.
 
 ## Enumeration:
-First to find the IP address of the victim.
+First, find the IP address of the victim.
 
 `netdiscover –r 10.11.1.0/24`
 
