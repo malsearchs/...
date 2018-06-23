@@ -1,6 +1,6 @@
 # BSides Vancouver: 2018 (Workshop)
 
-Boot2Root challenge
+*Boot2Root challenge.*
 
 VM image available [here](https://www.vulnhub.com/entry/bsides-vancouver-2018-workshop,231/#download).
 
