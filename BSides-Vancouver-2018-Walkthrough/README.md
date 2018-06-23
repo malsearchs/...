@@ -6,7 +6,7 @@ VM image available [here](https://www.vulnhub.com/entry/bsides-vancouver-2018-wo
 
 Boot the image from VM Player or VirtualBox and keep the network settings in bridge-mode for easier IP assignment and then get the attacker (typically, Kali) ready.  I would strongly recommend to keep this network out of Internet reach.
 
-## Enumeration:
+## Enumeration
 First, find the IP address of the victim.
 
 `netdiscover –r 10.11.1.0/24`
@@ -78,14 +78,14 @@ On the other side, hydra tries brute forcing the users and hydra finds password 
 
 <kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/hydra-ssh.png" /></kbd>
 
-## Low Privilege Shell:
+## Low Privilege Shell
 
 Login through SSH with user anne and it works as expected.
 
 <kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/hydra-ssh.png" /></kbd>
 
  
-## Privilege Escalation – Getting Root:
+## Privilege Escalation – Getting Root
 
 Just tried if this user has sudo access and unfortunately, anne has sudo access - sudo –s.
 
