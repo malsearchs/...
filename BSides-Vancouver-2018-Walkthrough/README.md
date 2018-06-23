@@ -17,7 +17,7 @@ Then fire nmap to find the open ports.
 
 `nmap –sV –sC 10.11.1.15`
 
-![nmap](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/nmap.png)
+![nmap](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/nmap1.png)
 
 Now we know HTTP running, run nikto.
 
