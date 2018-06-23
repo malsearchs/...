@@ -57,7 +57,7 @@ And there were list of users in it.
 
 Since website uses wordpress, tried wpscan for users enumeration.
 
-``wpscan –url http://10.11.1.15/backup_wordpress/  --enumerate u``
+> ``wpscan –url http://10.11.1.15/backup_wordpress/  --enumerate u``
 
 The output listed 2 login names, note that john user also present in the list of users taken from FTP.
 
