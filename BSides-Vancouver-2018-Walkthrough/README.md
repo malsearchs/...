@@ -11,19 +11,19 @@ First, find the IP address of the victim.
 
 `netdiscover –r 10.11.1.0/24`
 
-![netdiscover](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/netdisc.png)
+<kbd>![netdiscover](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/netdisc.png)</kbd>
 
 Then fire nmap to find the open ports.
 
 `nmap –sV –sC 10.11.1.15`
 
-![nmap](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/nmap1.png)
+<kbd>![nmap](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/nmap1.png)</kbd>
 
 Now we know HTTP running, run nikto.
 
 `nikto –C all –h 10.11.1.15`
 
-![nikto](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/nikto.png)
+<kbd>![nikto](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/nikto.png)</kbd>
 
 Two catchy things from nikto output: robots.txt and it has entry “/backup_wordpress/” directory.
 
@@ -33,7 +33,7 @@ Let’s check robots.txt file.
 
 Let’s check /backup_wordpress/ directory too. And there is link to login page. 
 
-![bkp-wp](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/bkp-wp.png)
+<kbd>![bkp-wp](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/bkp-wp.png)</kbd>
 
 Fine, now let’s try other 2 open ports, start with FTP.
 
@@ -41,7 +41,7 @@ Fine, now let’s try other 2 open ports, start with FTP.
 
 It’s already been noticed from the nmap output that the FTP allows anonymous login.
 
-![telnet21](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/telnet21.png)
+<kbd>![telnet21](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/telnet21.png)</kbd>
 
 Nothing interesting... let’s try accessing FTP from browser as nmap showed the presence of public directory.
 
