@@ -29,12 +29,11 @@ Two catchy things from nikto output: robots.txt and it has entry “/backup_word
 
 Let’s check robots.txt file. 
 
-![robots](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/robots.png)
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/robots.png" /></kbd>
 
 Let’s check /backup_wordpress/ directory too.
 
 ![bkp-wp](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/bkp-wp.png)
-
 
 There is link to login page. 
 
