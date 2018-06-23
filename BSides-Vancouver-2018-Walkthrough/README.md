@@ -1,10 +1,11 @@
 # BSides Vancouver: 2018 (Workshop)
 
-*Boot2Root challenge.*
+*Boot2Root challenge.*   
 
-VM image available [here](https://www.vulnhub.com/entry/bsides-vancouver-2018-workshop,231/#download).
+VM image available [here](https://www.vulnhub.com/entry/bsides-vancouver-2018-workshop,231/#download). 
 
-<span style=“color:gray;”> Boot the image from VM Player or VirtualBox and keep the network settings in bridge-mode for easier IP assignment and then get the attacker (typically, Kali) ready.  I would strongly recommend to keep this network out of Internet reach.</span>
+> ``Boot the image from VM Player or VirtualBox and keep the network settings in bridge-mode for easier IP assignment and then get the attacker (typically, Kali) ready. I would strongly recommend to keep this network out of Internet reach.``
+
 
 ## Enumeration
 First, find the IP address of the victim.
