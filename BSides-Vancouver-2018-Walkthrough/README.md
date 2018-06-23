@@ -59,4 +59,44 @@ And there were list of users in it.
 
 <kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/ftp3.png" /></kbd>
 
+Since website uses wordpress, tried wpscan for users enumeration.
 
+``wpscan –url http://10.11.1.15/backup_wordpress/  --enumerate u``
+
+The output listed 2 login names, note that john user also present in the list of users taken from FTP.
+
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/wpenum1.png" /></kbd>
+
+Run wpscan to bruteforce for john’s password.  Since it takes time, give a try to brute forcing SSH with other user names.
+
+``wpscan --url http://10.11.1.15/backup_wordpress / --username john --wordlist /usr/share/wordlists/metasploit/password.lst``
+
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/wpenum2.png" /></kbd>
+
+After a while, we have got the password for user john, this allows login to wordpress.
+
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/wplogin.png" /></kbd>
+
+On the other side, hydra tries brute forcing the users and hydra finds password for the user anne (seems other users have no SSH keys to login).
+``hydra –l anne –P /usr/share/wordlists/nmap.lst –t 5 ssh://10.11.1.15``
+
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/hydra-ssh.png" /></kbd>
+
+## Low Privilege Shell:
+
+Login through SSH with user anne and it works as expected.
+
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/hydra-ssh.png" /></kbd>
+
+ 
+## Privilege Escalation – Getting Root:
+
+Just tried if this user has sudo access and unfortunately, anne has sudo access - sudo –s.
+
+<kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/root.png" /></kbd>
+
+Bingo!    Got the flag!! 
+
+But the flag says that there are many ways to get the root.  So there should be a way to get the root through wordpress logging (remember user John?).
+
+<kbd><img src="" /></kbd>
