@@ -93,4 +93,4 @@ Just tried if this user has sudo access and unfortunately, anne has sudo access 
 
 Bingo!    Got the flag!! 
 
-But the flag says that there are many ways to get the root.  So there should be a way to get the root through wordpress logging (remember user John?).
+But the flag says that there are many ways to get the root.  So there should be an another way to get the root through wordpress logging (remember user John?).
