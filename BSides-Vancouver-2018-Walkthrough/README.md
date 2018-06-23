@@ -31,11 +31,7 @@ Let’s check robots.txt file.
 
 <kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/robots.png" /></kbd>
 
-Let’s check /backup_wordpress/ directory too.
-
-![bkp-wp](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/bkp-wp.png)
-
-There is link to login page. 
+Let’s check /backup_wordpress/ directory too. And there is link to login page. 
 
 ![bkp-wp](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/bkp-wp.png)
 
@@ -98,5 +94,3 @@ Just tried if this user has sudo access and unfortunately, anne has sudo access 
 Bingo!    Got the flag!! 
 
 But the flag says that there are many ways to get the root.  So there should be a way to get the root through wordpress logging (remember user John?).
-
-<kbd><img src="" /></kbd>
