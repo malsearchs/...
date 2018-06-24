@@ -43,7 +43,7 @@ It’s already been noticed from the nmap output that the FTP allows anonymous l
 
 <kbd>![telnet21](https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/telnet21.png)</kbd>
 
-Nothing interesting... let’s try accessing FTP from browser as nmap showed the presence of public directory.
+Let’s try accessing FTP from browser as nmap showed the presence of public directory.
 
 <kbd><img src="https://github.com/malsearchs/CTP-Walkthroughs/blob/master/BSides-Vancouver-2018-Walkthrough/ftp1.png" /></kbd>
 
